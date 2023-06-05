@@ -46,11 +46,12 @@ function teljesTablazatLekerese(){
      xhr.onreadystatechange=function(){
          if(xhr.readyState ==4 && xhr.status == 200){
             var adatok = eval(xhr.responseText);
-            localStorage.setItem("adatok",adatok);
+          //  localStorage.setItem("adatok",adatok);
+           localStorage.setItem("adatok",JSON.stringify(adatok));
            // var adatok = xhr.responseText;
             //window.alert(adatok.length);
             //tablazatLetrehozasa(adatok);
-            tablazatLetrehozasa(localStorage.getItem("adatok"));
+            tablazatLetrehozasa(JSON.parse(localStorage.getItem("adatok")));
          }
          
      }
