@@ -9,19 +9,29 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="functions.js"></script>
+        <link rel ="stylesheet" href="style.css" type = "text/css"/>
     </head>
-    <body>
-        <div>
-            <form method="get">
+    <body onload = "teljesTablazatLekerese()">
+        <div id="adatok">
+          <!--  <form method="get">
                 <label for = "uname"> Felhasználói név:</label>
                 <input id="uname" type="text" name="uname">
                 <br  />      
                 <label for = "password"> Jelszó:</label>
                 <input id="password" type="password" name="password">
-                <input type ="submit">
+                <input type ="submit" onclick = "letoltes2()"/>
                 <br  />  
-            </form>
-            
+            </form>-->
+                  <table>
+                      <tr>
+                          <th>UserId</th>
+                           <th>id</th> 
+                           <th>title</th>
+                            <th>body</th>
+                           
+                     </tr>
+                  </table>
         </div>
     </body>
 </html>
